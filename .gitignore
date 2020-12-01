@@ -130,5 +130,5 @@ dmypy.json
 .Rproj.user
 
 .idea
-.Rproj
+*.Rproj
 capstone/rsconnect/
