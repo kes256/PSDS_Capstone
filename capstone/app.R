@@ -13,6 +13,8 @@ library(geojsonio)
 library(mapproj)
 library(viridis)
 library(countrycode)
+#library(devtools)
+#devtools::install_github("tylermorganwall/rayshader")
 
 world_map <- geojson_read('custom_geo.json',  what = "sp")
 spdf_fortified <- broom::tidy(world_map, region = "name")
@@ -20,6 +22,7 @@ spdf_fortified$code <- countrycode(spdf_fortified$id, origin='country.name', des
 
 cia_all <- read_csv('factbook.csv')
 spdf_cia <- inner_join(spdf_fortified, cia_all)
+owid_data <- read.table("https://covid.ourworldindata.org/data/owid-covid-data.csv", header=T, sep=",", quote="")
 
 
 # Define UI for application that draws a histogram
@@ -36,7 +39,7 @@ ui <- fluidPage(
                         choices = colnames(cia_all)
             ),
             sliderInput("date", "Date (by week)",
-                        min = 0, max = 364, step = 7, value = 500, animate = TRUE
+                        min = as.Date('2020-01-23'), max = lubridate::today()-1, step = 7, value = lubridate::today(), timeFormat="%F", animate = TRUE
             ),
         ),
 
@@ -51,8 +54,13 @@ ui <- fluidPage(
 server <- function(input, output) {
 
     output$worldMap <- renderPlot({
+        owid_date <- filter(owid_data, owid_data$date == format(input$date, "%Y-%m-%d"))
+        spdf_owid <- left_join(spdf_cia, owid_date, by=c('code'='iso_code'))
+        
         ggplot() + 
             geom_polygon(data = spdf_cia, aes( x = long, y = lat, group=group, fill=get(input$col)), color="white") + 
+            geom_point(data = spdf_owid, aes(capital_long, capital_lat, size=total_cases), color='red') +
+            geom_point(data = spdf_owid, aes(capital_long, capital_lat, size=new_cases), color='yellow') +
             theme_void() + 
             labs(
                 title = "World Coronavirus Map",
