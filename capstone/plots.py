@@ -15,7 +15,7 @@ def create_z_scale(df, col_name):
     return scales[max_index]
 
 
-def plot_3d_data(owid_cia_df, data_to_plot, background_data, map_csv):
+def plot_3d_data(owid_cia_df, data_to_plot, data_for_color, map_csv):
     map_df = pd.read_csv(map_csv)
     map_df['height'] = 2
     countries = [x for _, x in map_df.groupby('group', as_index=False)]
@@ -25,9 +25,9 @@ def plot_3d_data(owid_cia_df, data_to_plot, background_data, map_csv):
 
     fig = px.scatter_3d(owid_cia_df,
                         x="capital_long", y="capital_lat", z=data_to_plot,
-                        color=data_to_plot,
-                        range_color=[0, 1],
-                        color_continuous_scale=["#DE3163", "#DE3163"],
+                        color=data_for_color,
+                        #range_color=[0, 1],
+                        #color_continuous_scale=["#DE3163", "#DE3163"],
                         range_x=[-180, 180],
                         range_y=[-90, 90],
                         # range_z=[1, create_z_scale(owid_cia_df, data_to_plot)],
@@ -41,12 +41,12 @@ def plot_3d_data(owid_cia_df, data_to_plot, background_data, map_csv):
                       error_z_symmetric=False,
                       error_z_value=0,
                       error_z_valueminus=100,
-                      error_z_thickness=5,
+                      error_z_thickness=2,
                       error_z_color="#DE3163")
     fig.update_scenes(camera_eye_x=1, camera_eye_y=-2, camera_eye_z=1)
     fig.update_scenes(yaxis_showspikes=False, yaxis_title_text='Latitude')
     fig.update_scenes(xaxis_showspikes=False, xaxis_title_text='Longitude')
-    fig.update_scenes(zaxis_showspikes=False, zaxis_title_text='New Cases')
+    fig.update_scenes(zaxis_showspikes=False, zaxis_title_text=data_to_plot)
     fig.update_scenes(aspectratio_x=2, aspectratio_y=2, aspectratio_z=0.5)
     for country in countries:
         country_color = '#DE3163'
@@ -55,17 +55,6 @@ def plot_3d_data(owid_cia_df, data_to_plot, background_data, map_csv):
                           mode='lines',
                           showlegend=False,
                           line_color='#000000')
-
-    fig.add_scatter3d(x=owid_cia_df.capital_long, y=owid_cia_df.capital_lat, z=[2] * len(owid_cia_df),
-                      hoverinfo='skip',
-                      mode='markers',
-                      # showlegend=False,
-                      marker_colorscale='viridis',
-                      marker_color=owid_cia_df[background_data],
-                      marker_cmin=min(owid_cia_df[background_data]),
-                      marker_cmax=max(owid_cia_df[background_data]),
-                      marker_size=3,
-                      marker_opacity=0.7)
 
     return fig.to_html()
 
@@ -80,5 +69,5 @@ def plot_scatter_data(owid_cia_df, data1, data2):
                      hover_data={'total_cases': ':,.0f', 'date': False},
                      #animation_frame="date",
                      title=f'COVID-19: {data1} vs. {data2}')
-    return fig.to_html()
+    return fig.to_html(auto_play=False)
 

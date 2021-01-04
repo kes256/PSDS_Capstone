@@ -17,13 +17,11 @@ library(plotly)
 library(reticulate)
 
 source_python('plots.py')
-#world_map <- geojson_read('custom_geo.json',  what = "sp")
-#spdf_fortified <- broom::tidy(world_map, region = "name")
-#spdf_fortified$code <- countrycode(spdf_fortified$id, origin='country.name', destination='iso3c', custom_match = c('Kosovo' = 'XK', 'S. Sudan' = 'SSD', 'W. Sahara' = 'ESH', 'Dem. Rep. Korea'='PRK', 'Somaliland'='SOM'))
 
+weekly_dates <- append(seq(as.Date('2020-01-23'), lubridate::today() - 1, 'weeks'), lubridate::today() - 1)
 cia_all <- read_csv('factbook.csv')
-spdf_cia <- inner_join(spdf_fortified, cia_all)
 owid_data <- read.table("https://covid.ourworldindata.org/data/owid-covid-data.csv", header=T, sep=",", quote="")
+owid_data <- dplyr::filter(owid_data, date %in% format(weekly_dates, "%Y-%m-%d"))
 cia_owid <- left_join(cia_all, owid_data, by=c('code'='iso_code')) %>% drop_na(capital_lat, date) %>%
     mutate_all(funs(ifelse(is.na(.), 0, .)))
 
@@ -34,18 +32,47 @@ ui <- fluidPage(
     titlePanel("COVID reporting with supplemental data"),
 
     # Sidebar with input 
-    sidebarLayout(
-        sidebarPanel(
-            selectInput("col",
-                        label = "Background Color",
-                        choices = colnames(cia_all)
-            ),
+    verticalLayout(
+        selectInput("data",
+                    label = "COVID Data Selection",
+                    choices = c('total_cases',
+                                'total_deaths',
+                                'new_cases_smoothed',
+                                'new_deaths_smoothed',
+                                'total_cases_per_million',
+                                'new_cases_smoothed_per_million',
+                                'total_deaths_per_million',
+                                'new_deaths_smoothed_per_million',
+                                'tests_per_case')
         ),
-        
-        # Show a plot 
-        mainPanel(
-           htmlOutput("worldMap", height=1000)
-        )
+        selectInput("color",
+                    label = "Color Selection",
+                    choices = c('stringency_index',
+                                'population',
+                                'population_density',
+                                'median_age',
+                                'aged_65_older',
+                                'aged_70_older',
+                                'gdp_per_capita',
+                                'extreme_poverty',
+                                'cardiovasc_death_rate',
+                                'diabetes_prevalence',
+                                'female_smokers',
+                                'male_smokers',
+                                'handwashing_facilities',
+                                'hospital_beds_per_thousand',
+                                'life_expectancy',
+                                'human_development_index',
+                                "Percent_Urban_Population",
+                                "Infant_Mortality_Rate",
+                                "Access_to_Improved_Drinking_Water",
+                                "Access_to_Improved_Sanitation_Facility",
+                                "Literacy_Rate",
+                                "School_Life_Expectancy",
+                                "Education_Expenditure",
+                                "Access_to_Internet")
+        ),
+        htmlOutput("worldMap")
     )
 )
 
@@ -53,7 +80,7 @@ ui <- fluidPage(
 server <- function(input, output) {
 
     output$worldMap <- reactive({
-        plot_3d_data(r_to_py(cia_owid), 'new_cases', input$col, 'map.csv')
+        plot_3d_data(r_to_py(cia_owid), input$data, input$color, 'map.csv')
     })
 }
 
