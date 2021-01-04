@@ -1,5 +1,4 @@
 Area,Population,Percent_Population_Aged_55_to_64,Percent_Population_65_and_over,Median_Age,Death_Rate_per_1000,Percent_Urban_Population,Infant_Mortality_Rate,Life_Expectancy,Access_to_Improved_Drinking_Water,Access_to_Improved_Sanitation_Facility,Major_Infectious_Disease_Count,Literacy_Rate,School_Life_Expectancy,GDP_Purchasing_Power,GDP_Agriculture,GDP_Industry,GDP_Services,Labor_Force,Unemployment_Rate,Public_Debt,Access_to_Electricity,Access_to_Internet,Percent_Forest,Physician_Density,Hospital_Bed_Density,Major_Infectious_Disease_Risk,Percent_Obesity,Education_Expenditure,Population_in_Poverty,code,capital_lat,capital_long
-510072000,7684292383,9.09,9.49,31,7.7,56.2,30.8,70.5,91.1,67.7,0,86.3,12,1.278e+14,6.4,30,63,3.432e+09,7.7,67.2,83,53.9,NA,NA,NA,NA,NA,NA,NA,OWID_WRL,NA,NA
 652230,36643815,4.01,2.68,19.5,12.7,26,104.3,52.8,70.2,53.2,5,43,10,6.945e+10,23,21.1,55.9,8478000,23.9,7,84.1,13.5,2.07,0.28,0.4,1,5.5,4.1,54.5,AFG,34.5166666667,69.1833333333
 28748,3074579,11.94,13.03,34.3,7.1,62.1,10.8,79,96.2,99.8,NA,98.1,15,3.601e+10,21.7,24.2,54.1,1198000,13.8,71.8,100,71.85,28.12,1.22,2.9,NA,21.7,4,14.3,ALB,41.3166666667,19.8166666667
 2381740,42972878,7.41,6.17,28.9,4.4,73.7,17.6,77.5,98.7,96,NA,81.4,14,6.3e+11,13.3,39.3,47.4,11820000,11.7,27.5,99.4,59.58,0.8,1.79,1.9,NA,27.4,NA,23,DZA,36.75,3.05
@@ -242,4 +241,3 @@ Area,Population,Percent_Population_Aged_55_to_64,Percent_Population_65_and_over,
 527968,29884405,4,2.8,19.8,5.6,37.9,41.9,66.9,92,53.3,6,70.1,9,7.363e+10,20.3,11.8,67.9,7425000,27,74.5,47,26.72,1,0.53,0.7,2,17.1,NA,54,YEM,15.35,44.2
 752618,17426623,3.01,2.27,16.9,11.6,44.6,56,53.6,67.5,43.9,8,86.7,NA,6.893e+10,7.5,35.3,57,6898000,15,63.1,33,14.3,66.3,0.16,2,3,8.1,NA,54.4,ZMB,-15.4166666667,28.2833333333
 390757,14546314,4.07,4.52,20.5,9.3,32.2,30.3,62.3,77.3,36.8,8,86.5,10,3.427e+10,12,22.2,65.8,7907000,11.3,82.3,34,27.06,39.5,0.19,1.7,2,15.5,6.1,72.3,ZWE,-17.8166666667,31.0333333333
-4236351,453007803,13.52,20.5,44,10.7,NA,3.7,80.9,NA,NA,0,NA,NA,2.085e+13,1.6,25.1,70.9,238900000,8.6,86.8,NA,85,NA,NA,NA,NA,NA,4.6,9.8,EU,NA,NA
