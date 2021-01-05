@@ -15,15 +15,10 @@ library(viridis)
 library(countrycode)
 library(plotly)
 
-#source('virtualenv.R')
 requirements = c('numpy', 'pandas', 'plotly_express', 'plotly')
 reticulate::virtualenv_create(envname='python3_env', python='python3')
 reticulate::virtualenv_install('python3_env', packages=requirements)
 reticulate::use_virtualenv('python3_env', required=T)
-#reticulate::use_python('/usr/bin/python3')
-#reticulate::py_install(requirements)
-
-
 reticulate::source_python('plots.py')
 
 weekly_dates <- append(seq(as.Date('2020-01-23'), lubridate::today() - 1, 'weeks'), lubridate::today() - 1)
