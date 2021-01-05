@@ -27,7 +27,8 @@ def plot_3d_data(owid_cia_df, data_to_plot, data_for_color, map_csv):
                       error_z_symmetric=False,
                       error_z_value=0,
                       error_z_valueminus=100,
-                      error_z_thickness=2)
+                      error_z_thickness=2,
+                      error_z_color="#DE3163")
     fig.update_scenes(camera_eye_x=1, camera_eye_y=-2, camera_eye_z=1)
     fig.update_scenes(yaxis_showspikes=False, yaxis_title_text='Latitude')
     fig.update_scenes(xaxis_showspikes=False, xaxis_title_text='Longitude')
