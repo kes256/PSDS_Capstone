@@ -1,0 +1,35 @@
+Cleaning/ingesting CIA Factbook Data from https://github.com/iancoleman/cia_world_factbook_api:
+    - save 'factbook.json' from Ian Coleman's github
+    - run 'dev.py' to get output file 'keys.txt'
+        - 'keys.txt' shows the proportion of countries for which each key path has a value, and the key path
+        - manually edited 'keys.txt' and saved as 'filtered_keys.txt', removing rare or non-numerical data
+        - manually sorted key paths into rough subject areas, and saved in different text files in '/columns_by_subject'
+    - run 'key_rewrite.py' to reformat several data types, for easier manipulation in R, saving to 'clean_factbook.json'
+    - In R, run factbook.R, which loads clean_factbook.json into a dataframe, then exports it to 'factbook.csv'
+        - script also converts 'custom_geo.json' (file containing coordinates defining country borders) to 'map.csv'
+
+Advantages working in R:
+    Simpler flattening of nested json to a tidy dataframe (glom library in python may also have options to do this)
+    Built-in library available to convert country names to ISO codes for joining different dataframes
+
+
+Plotting:
+    Initial plotting was done in R using ggplot2, then switching over to plotly for richer 3d options
+    The final 3d plot is created using plotly in python, where more animated 3d options are supported
+    - 'plots.py' contains a function to generate an animated 3d plot of global covid data
+
+Shiny app:
+    '/capstone' folder contains files and scripts for a shiny app
+        - App uses reticulate library to run python 'plots.py' and incorporate into the app
+        - App is deployed on shiny.io
+            - reticulate and .Rprofile create and set up virtual env for python in shiny.io
+                see https://github.com/ranikay/shiny-reticulate-app for details
+                other systems/environments will require changes
+
+Analysis:
+CIA_Factbook_Factor_analysis.py - originally run as jupyter notebook, attempt to reverse-engineer Human Developement Index from Factbook data.
+Timeseries Analysis.py - compares New Cases and Reproduction Rate to Stringency Index, allowing up to 14 day lags between each data type.
+policy.py - compares policy actions in more detail
+    - includes breakdown of stringency into different categories of policy actions
+    - includes state-level stringencies measures for USA, Canada, and Brazil
+    - data is not merged with full case data from OWID, limiting the options to measure effective management of pandemic
