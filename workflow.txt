@@ -27,7 +27,7 @@ Shiny app:
                 other systems/environments will require changes
 
 Analysis:
-CIA_Factbook_Factor_analysis.py - originally run as jupyter notebook, attempt to reverse-engineer Human Developement Index from Factbook data.
+CIA_Factbook_Factor_analysis.py - originally run as jupyter notebook, attempt to reverse-engineer Human Development Index from Factbook data.
 Timeseries Analysis.py - compares New Cases and Reproduction Rate to Stringency Index, allowing up to 14 day lags between each data type.
 policy.py - compares policy actions in more detail
     - includes breakdown of stringency into different categories of policy actions

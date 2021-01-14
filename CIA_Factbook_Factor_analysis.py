@@ -2,7 +2,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import seaborn as sns
-from sklearn import linear_model
 from statsmodels.regression.linear_model import OLS
 
 cia_df = pd.read_csv('factbook.csv')
@@ -79,8 +78,6 @@ for pair in index_correlations:
 variables = [field for field, corr in index_correlations if corr >= 0.7]
 index_predictor_df = owid_cia_df[index + variables].dropna()
 index_df = index_predictor_df[index[0]] * 100
-reg = linear_model.LinearRegression()
-reg.fit(index_predictor_df[variables], index_predictor_df[index[0]])
 result = OLS(index_df, index_predictor_df[variables]).fit()
 print(f'summary of OLS predicting Human Development Index from CIA World Factbook features with R^2 > 0.7:')
 print(result.summary())
