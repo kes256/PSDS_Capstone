@@ -6,10 +6,12 @@ import plotly_express as px
 
 def plot_3d_data(owid_cia_df, data_to_plot, data_for_color, map_csv):
     map_df = pd.read_csv(map_csv)
-    map_df['height'] = 2
+    map_df['height'] = 0
     countries = [x for _, x in map_df.groupby('group', as_index=False)]
 
-    owid_cia_df.sort_values(by=['date'], inplace=True)
+    data_to_plot = data_to_plot.strip('*')
+    data_for_color = data_for_color.strip('*')
+
     pin_markers = go.scatter3d.Marker(size=4, symbol='circle', showscale=False)
 
     fig = px.scatter_3d(owid_cia_df,
