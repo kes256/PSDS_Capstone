@@ -1,0 +1,13 @@
+code
+data.name
+data.people.population.total
+data.economy.gdp.purchasing_power_parity.annual_values.value
+data.economy.labor_force.total_size.total_people
+data.economy.inflation_rate.annual_values
+data.economy.gdp.composition.by_sector_of_origin.sectors.services.value
+data.economy.gdp.real_growth_rate.annual_values
+data.economy.gdp.composition.by_sector_of_origin.sectors.industry.value
+data.economy.gdp.composition.by_sector_of_origin.sectors.agriculture.value
+data.economy.unemployment_rate.annual_values.value
+data.economy.public_debt.annual_values.value
+data.economy.population_below_poverty_line.value

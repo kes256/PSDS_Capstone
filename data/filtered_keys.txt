@@ -1,0 +1,146 @@
+1.0 (210 out of 210), countries, data, people, urbanization, urban_population, value
+1.0 (210 out of 210), countries, data, people, religions, religion
+1.0 (210 out of 210), countries, data, people, population, total
+1.0 (210 out of 210), countries, data, people, languages, language
+1.0 (210 out of 210), countries, data, people, ethnic_groups, ethnicity
+1.0 (210 out of 210), countries, data, name
+1.0 (210 out of 210), countries, data, government, international_organization_participation
+1.0 (210 out of 210), countries, data, government, government_type
+1.0 (210 out of 210), countries, data, geography, terrain
+1.0 (210 out of 210), countries, data, geography, map_references
+1.0 (210 out of 210), countries, data, geography, location
+1.0 (210 out of 210), countries, data, geography, land_boundaries, total, value
+1.0 (210 out of 210), countries, data, geography, geographic_coordinates, longitude, minutes
+1.0 (210 out of 210), countries, data, geography, geographic_coordinates, longitude, hemisphere
+1.0 (210 out of 210), countries, data, geography, geographic_coordinates, longitude, degrees
+1.0 (210 out of 210), countries, data, geography, geographic_coordinates, latitude, minutes
+1.0 (210 out of 210), countries, data, geography, geographic_coordinates, latitude, hemisphere
+1.0 (210 out of 210), countries, data, geography, geographic_coordinates, latitude, degrees
+1.0 (210 out of 210), countries, data, geography, environment, current_issues
+1.0 (210 out of 210), countries, data, geography, climate
+1.0 (210 out of 210), countries, data, geography, area, total, value
+0.9952380952380953 (209 out of 210), countries, data, people, life_expectancy_at_birth, total_population, value
+0.9952380952380953 (209 out of 210), countries, data, people, life_expectancy_at_birth, male, value
+0.9952380952380953 (209 out of 210), countries, data, people, life_expectancy_at_birth, female, value
+0.9952380952380953 (209 out of 210), countries, data, people, death_rate, deaths_per_1000_population
+0.9952380952380953 (209 out of 210), countries, data, people, birth_rate, births_per_1000_population
+0.9952380952380953 (209 out of 210), countries, data, geography, area, land, value
+0.9952380952380953 (209 out of 210), countries, data, economy, labor_force, total_size, total_people
+0.9952380952380953 (209 out of 210), countries, data, economy, industries, industries
+0.9952380952380953 (209 out of 210), countries, data, economy, gdp, purchasing_power_parity, annual_values
+0.9904761904761905 (208 out of 210), countries, data, transnational_issues, disputes
+0.9904761904761905 (208 out of 210), countries, data, people, total_fertility_rate, children_born_per_woman
+0.9904761904761905 (208 out of 210), countries, data, people, sex_ratio, total_population, value
+0.9904761904761905 (208 out of 210), countries, data, people, sex_ratio, by_age, at_birth, value
+0.9904761904761905 (208 out of 210), countries, data, people, sex_ratio, by_age, 65_years_and_over, value
+0.9904761904761905 (208 out of 210), countries, data, people, sex_ratio, by_age, 55_to_64_years, value
+0.9904761904761905 (208 out of 210), countries, data, people, sex_ratio, by_age, 25_to_54_years, value
+0.9904761904761905 (208 out of 210), countries, data, people, sex_ratio, by_age, 15_to_24_years, value
+0.9904761904761905 (208 out of 210), countries, data, people, sex_ratio, by_age, 0_to_14_years, value
+0.9904761904761905 (208 out of 210), countries, data, people, net_migration_rate, migrants_per_1000_population
+0.9904761904761905 (208 out of 210), countries, data, people, median_age, total, value
+0.9904761904761905 (208 out of 210), countries, data, people, median_age, male, value
+0.9904761904761905 (208 out of 210), countries, data, people, median_age, female, value
+0.9904761904761905 (208 out of 210), countries, data, people, life_expectancy_at_birth, total_population, units
+0.9904761904761905 (208 out of 210), countries, data, people, infant_mortality_rate, total, value
+0.9904761904761905 (208 out of 210), countries, data, people, infant_mortality_rate, male, value
+0.9904761904761905 (208 out of 210), countries, data, people, infant_mortality_rate, female, value
+0.9904761904761905 (208 out of 210), countries, data, people, age_structure, 65_and_over, percent
+0.9904761904761905 (208 out of 210), countries, data, people, age_structure, 65_and_over, males
+0.9904761904761905 (208 out of 210), countries, data, people, age_structure, 65_and_over, females
+0.9904761904761905 (208 out of 210), countries, data, people, age_structure, 55_to_64, percent
+0.9904761904761905 (208 out of 210), countries, data, people, age_structure, 55_to_64, males
+0.9904761904761905 (208 out of 210), countries, data, people, age_structure, 55_to_64, females
+0.9904761904761905 (208 out of 210), countries, data, people, age_structure, 25_to_54, percent
+0.9904761904761905 (208 out of 210), countries, data, people, age_structure, 25_to_54, males
+0.9904761904761905 (208 out of 210), countries, data, people, age_structure, 25_to_54, females
+0.9904761904761905 (208 out of 210), countries, data, people, age_structure, 15_to_24, percent
+0.9904761904761905 (208 out of 210), countries, data, people, age_structure, 15_to_24, males
+0.9904761904761905 (208 out of 210), countries, data, people, age_structure, 15_to_24, females
+0.9904761904761905 (208 out of 210), countries, data, people, age_structure, 0_to_14, percent
+0.9904761904761905 (208 out of 210), countries, data, people, age_structure, 0_to_14, males
+0.9904761904761905 (208 out of 210), countries, data, people, age_structure, 0_to_14, females
+0.9904761904761905 (208 out of 210), countries, data, government, capital, geographic_coordinates, longitude, minutes
+0.9904761904761905 (208 out of 210), countries, data, government, capital, geographic_coordinates, longitude, hemisphere
+0.9904761904761905 (208 out of 210), countries, data, government, capital, geographic_coordinates, longitude, degrees
+0.9904761904761905 (208 out of 210), countries, data, government, capital, geographic_coordinates, latitude, minutes
+0.9904761904761905 (208 out of 210), countries, data, government, capital, geographic_coordinates, latitude, hemisphere
+0.9904761904761905 (208 out of 210), countries, data, government, capital, geographic_coordinates, latitude, degrees
+0.9904761904761905 (208 out of 210), countries, data, geography, natural_hazards
+0.9904761904761905 (208 out of 210), countries, data, geography, land_use, by_sector, permanent_crops, value
+0.9904761904761905 (208 out of 210), countries, data, geography, land_use, by_sector, other, value
+0.9904761904761905 (208 out of 210), countries, data, geography, land_use, by_sector, arable_land, value
+0.9904761904761905 (208 out of 210), countries, data, geography, land_use, by_sector, agricultural_land_total, value
+0.9904761904761905 (208 out of 210), countries, data, geography, area, water, value
+0.9904761904761905 (208 out of 210), countries, data, economy, inflation_rate, annual_values
+0.9904761904761905 (208 out of 210), countries, data, economy, gdp, per_capita_purchasing_power_parity, annual_values
+0.9904761904761905 (208 out of 210), countries, data, communications, broadcast_media
+0.9857142857142858 (207 out of 210), countries, data, people, drinking_water_source, unimproved, total, value
+0.9857142857142858 (207 out of 210), countries, data, people, drinking_water_source, improved, total, value
+0.9857142857142858 (207 out of 210), countries, data, geography, land_use, by_sector, permanent_pasture, value
+0.9857142857142858 (207 out of 210), countries, data, geography, land_use, by_sector, forest, value
+0.9857142857142858 (207 out of 210), countries, data, economy, gdp, composition, by_sector_of_origin, sectors, services, value
+0.9857142857142858 (207 out of 210), countries, data, economy, agriculture_products, products
+0.9809523809523809 (206 out of 210), countries, data, geography, natural_resources, resources
+0.9809523809523809 (206 out of 210), countries, data, economy, gdp, real_growth_rate, annual_values
+0.9809523809523809 (206 out of 210), countries, data, economy, exports, commodities, by_commodity
+0.9761904761904762 (205 out of 210), countries, data, transportation, air_transport, airports, total, airports
+0.9761904761904762 (205 out of 210), countries, data, economy, imports, commodities, by_commodity
+0.9761904761904762 (205 out of 210), countries, data, economy, gdp, composition, by_sector_of_origin, sectors, industry, value
+0.9761904761904762 (205 out of 210), countries, data, economy, gdp, composition, by_sector_of_origin, sectors, agriculture, value
+0.9761904761904762 (205 out of 210), countries, data, communications, internet, users, total
+0.9761904761904762 (205 out of 210), countries, data, communications, internet, users, percent_of_population
+0.9714285714285714 (204 out of 210), countries, data, communications, telephones, fixed_lines, total_subscriptions
+0.9714285714285714 (204 out of 210), countries, data, communications, telephones, fixed_lines, subscriptions_per_one_hundred_inhabitants
+0.9619047619047619 (202 out of 210), countries, data, energy, electricity, production, kWh
+0.9619047619047619 (202 out of 210), countries, data, energy, electricity, consumption, kWh
+0.9619047619047619 (202 out of 210), countries, data, energy, electricity, access, total_electrification, value
+0.9619047619047619 (202 out of 210), countries, data, communications, telephones, mobile_cellular, total_subscriptions
+0.9619047619047619 (202 out of 210), countries, data, communications, telephones, mobile_cellular, subscriptions_per_one_hundred_inhabitants
+0.9571428571428572 (201 out of 210), countries, data, people, sanitation_facility_access, unimproved, total, value
+0.9571428571428572 (201 out of 210), countries, data, people, sanitation_facility_access, improved, total, value
+0.9523809523809523 (200 out of 210), countries, data, transportation, roadways, total, value
+0.9476190476190476 (199 out of 210), countries, data, energy, refined_petroleum_products, consumption, bbl_per_day
+0.9476190476190476 (199 out of 210), countries, data, energy, natural_gas, consumption, cubic_metres
+0.9476190476190476 (199 out of 210), countries, data, economy, unemployment_rate, annual_values
+0.9428571428571428 (198 out of 210), countries, data, energy, electricity, installed_generating_capacity, kW
+0.9428571428571428 (198 out of 210), countries, data, energy, electricity, by_source, other_renewable_sources, percent
+0.9428571428571428 (198 out of 210), countries, data, energy, electricity, by_source, nuclear_fuels, percent
+0.9428571428571428 (198 out of 210), countries, data, energy, electricity, by_source, hydroelectric_plants, percent
+0.9428571428571428 (198 out of 210), countries, data, energy, electricity, by_source, fossil_fuels, percent
+0.9428571428571428 (198 out of 210), countries, data, energy, carbon_dioxide_emissions_from_consumption_of_energy, megatonnes
+0.9428571428571428 (198 out of 210), countries, data, economy, public_debt, annual_values
+0.9047619047619048 (190 out of 210), countries, data, economy, labor_force, by_occupation, occupation, agriculture, value
+0.9047619047619048 (190 out of 210), countries, data, economy, industrial_production_growth_rate, annual_percentage_increase
+0.9 (189 out of 210), countries, data, people, dependency_ratios, ratios, youth_dependency_ratio, value
+0.9 (189 out of 210), countries, data, people, dependency_ratios, ratios, total_dependency_ratio, value
+0.9 (189 out of 210), countries, data, people, dependency_ratios, ratios, elderly_dependency_ratio, value
+0.8904761904761904 (187 out of 210), countries, data, people, physicians_density, physicians_per_1000_population
+0.8761904761904762 (184 out of 210), countries, data, economy, labor_force, by_occupation, occupation, industry, value
+0.861904761904762 (181 out of 210), countries, data, people, adult_obesity, percent_of_adults
+0.8428571428571429 (177 out of 210), countries, data, people, sanitation_facility_access, unimproved, urban, value
+0.8428571428571429 (177 out of 210), countries, data, people, sanitation_facility_access, improved, urban, value
+0.819047619047619 (172 out of 210), countries, data, people, drinking_water_source, unimproved, urban, value
+0.819047619047619 (172 out of 210), countries, data, people, drinking_water_source, improved, urban, value
+0.8142857142857143 (171 out of 210), countries, data, people, hospital_bed_density, beds_per_1000_population
+0.8095238095238095 (170 out of 210), countries, data, people, sanitation_facility_access, unimproved, rural, value
+0.8095238095238095 (170 out of 210), countries, data, people, sanitation_facility_access, improved, rural, value
+0.7952380952380952 (167 out of 210), countries, data, people, education_expenditures, percent_of_gdp
+0.7857142857142857 (165 out of 210), countries, data, economy, population_below_poverty_line, value
+0.7571428571428571 (159 out of 210), countries, data, people, literacy, total_population, value
+0.7571428571428571 (159 out of 210), countries, data, people, literacy, male, value
+0.7523809523809524 (158 out of 210), countries, data, people, school_life_expectancy, total, value
+0.7523809523809524 (158 out of 210), countries, data, people, literacy, female, value
+0.7476190476190476 (157 out of 210), countries, data, people, school_life_expectancy, male, value
+0.7476190476190476 (157 out of 210), countries, data, people, school_life_expectancy, female, value
+0.7476190476190476 (157 out of 210), countries, data, geography, land_boundaries, border_countries
+0.4857142857142857 (102 out of 210), countries, data, people, major_infectious_diseases, degree_of_risk
+0.46190476190476193 (97 out of 210), countries, data, people, major_infectious_diseases, vectorborne_diseases
+0.4523809523809524 (95 out of 210), countries, data, people, major_infectious_diseases, food_or_waterborne_diseases
+0.44285714285714284 (93 out of 210), countries, data, energy, electricity, access, urban_electrification, value
+0.44285714285714284 (93 out of 210), countries, data, energy, electricity, access, rural_electrification, value
+0.30952380952380953 (65 out of 210), countries, data, energy, electricity, access, population_without_electricity, value
+0.21428571428571427 (45 out of 210), countries, data, people, major_infectious_diseases, water_contact_diseases
+0.2 (42 out of 210), countries, data, people, major_infectious_diseases, animal_contact_diseases
+0.08095238095238096 (17 out of 210), countries, data, people, major_infectious_diseases, respiratory_diseases
+0.01904761904761905 (4 out of 210), countries, data, people, major_infectious_diseases, aerosolized_dust_or_soil_contact_diseases

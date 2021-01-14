@@ -1,0 +1,15 @@
+code
+data.name
+data.geography.map_references
+data.geography.geographic_coordinates.longitude.minutes
+data.geography.geographic_coordinates.longitude.hemisphere
+data.geography.geographic_coordinates.longitude.degrees
+data.geography.geographic_coordinates.latitude.minutes
+data.geography.geographic_coordinates.latitude.hemisphere
+data.geography.geographic_coordinates.latitude.degrees
+data.government.capital.geographic_coordinates.longitude.minutes
+data.government.capital.geographic_coordinates.longitude.hemisphere
+data.government.capital.geographic_coordinates.longitude.degrees
+data.government.capital.geographic_coordinates.latitude.minutes
+data.government.capital.geographic_coordinates.latitude.hemisphere
+data.government.capital.geographic_coordinates.latitude.degrees

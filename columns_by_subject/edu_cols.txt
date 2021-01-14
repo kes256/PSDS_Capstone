@@ -1,0 +1,12 @@
+code
+data.name
+data.people.population.total
+data.communications.internet.users.total
+data.communications.internet.users.percent_of_population
+data.people.education_expenditures.percent_of_gdp
+data.people.literacy.total_population.value
+data.people.literacy.male.value
+data.people.school_life_expectancy.total.value
+data.people.literacy.female.value
+data.people.school_life_expectancy.male.value
+data.people.school_life_expectancy.female.value
