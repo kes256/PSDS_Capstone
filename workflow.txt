@@ -21,8 +21,8 @@ Plotting:
 Shiny app:
     '/capstone' folder contains files and scripts for a shiny app
         - App uses reticulate library to run python 'plots.py' and incorporate into the app
-        - App is deployed on shiny.io
-            - reticulate and .Rprofile create and set up virtual env for python in shiny.io
+        - App is deployed on https://kes256.shinyapps.io/capstone_basic
+            - reticulate and .Rprofile create and set up virtual env for python in shinyapps.io
                 see https://github.com/ranikay/shiny-reticulate-app for details
                 other systems/environments will require changes
 
